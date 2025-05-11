@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            transition: all .4s ease;
+            font-family: arial;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .body{
+            width: 100%;
+            height: 100vh;
+        }
+        .top{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .name{
+            margin-left: 10px;
+        }
+        .button{
+            margin-right: 10px;
+        }
+        .button button{
+            border: 0;
+        }
+        .maina{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .mainb , .mainc{
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .txt{
+            width: 70%;
+            text-align: center;
+            font-size: 25px;
+        }
+        .mainc button{
+            width: 70%;
+            height: 60px;
+            border-radius: 25px;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            font-size: 20px;
+            position: fixed;
+            bottom: 30px;
+            font-weight: bold;
+            border: 3px solid rgb(255, 0, 0);
+        }
+        .nav{
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 30px 0 30px 30px;
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background-color: white;
+            transform: translateY(-300px);
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+        }
+        .remove button{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            right: 0px;
+            display: none;
+            background: transparent;
+            border: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispuni
+    </title>
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <div class="name">
+                <img width="120px" src="/images/name.png" />
+            </div>
+            <div class="button">
+                <button>
+                    <img width="30px" src="/images/button.png" />
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="maina">
+                <img width="170px" src="/images/name2.png" alt="">
+            </div>
+            <div class="mainb">
+                <div class="txt">
+                    Welcome Dear Uniben Student to DISPUNI website, a student based dispatch service website that allows delivery within 12 hours. 
+                    <br><br> <i>Our Motto: Deliver ASAP</i>
+                </div>
+            </div>
+            <div class="mainc">
+                <button onclick="window.location='./user.html'">
+                    Get Started
+                </button>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="open">
+                <li><a href="./user.html">Dispatch Services</a></li>
+                <li><a href="./about.html">About us</a></li>
+            </div>
+        </div>
+        <div class="remove">
+            <button></button>
+        </div>
+    </div>
+<script>
+    let navbtn = document.querySelector('.button button');
+    let nav = document.querySelector('.nav');
+    let buttonremover = document.querySelector('.remove button');
+    navbtn.addEventListener('click',()=>{
+        nav.style.transform = 'translateY(0)';
+        buttonremover.style.display = 'block'
+    })
+    buttonremover.addEventListener('click',()=>{
+        nav.style.transform = 'translateY(-300px)';
+        buttonremover.style.display = 'none'
+    })
+</script>
+</body>
+</html>

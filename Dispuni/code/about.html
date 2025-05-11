@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            transition: all .5s ease-in;
+            font-family: arial;
+        }
+        .top{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: end;
+            margin-bottom: 40px;
+        }
+        .left{
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: -5px;
+        }
+        .right{
+            margin-right: 20px;
+        }
+        a{
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .a{
+            width: 80%;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            border-radius: 20px;
+            background: rgb(255, 0, 0);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: 0;
+        }
+        .btn{
+            position: fixed;
+            bottom: 40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <div class="left">
+                About Us
+            </div>
+            <div class="right">
+                <a href="./logo.html">&LessLess; Go home</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="a">
+                DISPUNI is a website created by Okuoimose Israel, a student of Uniben whose goal before building the website was to help with distribution of parcels and other items to various parts within the school in order to reduce stress or absentism from class due to an important package that needs to be delivered.
+                In essence the idea is that "allow your money to go where you want to without restrictions". 
+                <br><br>Warning!!! Do not make payments to the dispatch direct and do not make payments unless there is confirmation of delivered package.
+                the account the money should be paid to will be sent to you via email provided.
+            </div>
+            <div class="btn">
+                <button onclick="window.location='./user.html'">
+                    Request Services
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

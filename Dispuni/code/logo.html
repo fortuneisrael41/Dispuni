@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            animation: skip 4s ease-in-out 1;
+        }
+        @keyframes skip {
+            80%{
+                transform: translateY(100px);
+            }
+            100%{
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <img src="../images/Logo.png" alt="">
+    </div>
+<script>
+    setTimeout(()=>{
+        window.location = 'home.html'
+    },3900)
+</script>
+</body>
+</html>
